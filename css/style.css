@@ -60,32 +60,39 @@ section.chairSection {
   width: 100%;
   height: 500px;
   box-sizing: border-box;
-  background-color: white;
+  bbackground-color: lightgrey;
+  background: -webkit-linear-gradient(bottom, lightgrey, white);
+  background: -o-linear-gradient(bottom, lightgrey, white);
+  background: -moz-linear-gradient(bottom, lightgrey, white);
+  background: linear-gradient(bottom, lightgrey, white);
 }
 
-div.leftArrow {
+div.arrow {
   color: #38b6a0;
-  font-size: 70px;
+  font-size: 100px;
   cursor: pointer;
   float: left;
+  margin-top: 190px;
+  width: 10%
 }
 
 div.rightArrow {
-  color: #38b6a0;
-  font-size: 70px;
-  cursor: pointer;
-  float: left;
+  float: right;
+  text-align: right;
 }
 article.chair {
     float: left;
     width: 40%;
-    height: 340px;
+    height: 260px;
+    margin-top: 90px;
 }
+
 
 article.headArticle {
   float: left;
   width: 40%;
   height: 340px;
+  margin-top: 140px;
 }
 
 h1.headArticle {
@@ -93,6 +100,7 @@ h1.headArticle {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+  text-align: center;
 }
 
 span.headArticle {
@@ -104,6 +112,8 @@ p.headArticle {
   margin: 40px 0 35px 0;
   color: #000000;
   text-align: center;
+  font-size: 15px;
+  line-height: 22px;
 
 }
 
@@ -119,6 +129,7 @@ line-height: 50px;
 font-size: 20px;
 font-weight: 700;
 letter-spacing: 1px;
+margin: 0 auto;
 }
 
 
@@ -134,7 +145,7 @@ article.photoContainer {
   width: 330px;
   float: left;
   height: 225px;
-  margin: 0 25px 0 0;
+  margin: 25px 25px 0 0;
 }
 
 article.photo1 {
@@ -148,6 +159,7 @@ article.description1 {
   float: left;
   height: 250px;
   box-sizing: border-box;
+  margin-top: 25px;
   padding: 25px;
   border: 1px solid #dbdbdb;
 }
