@@ -144,13 +144,38 @@ section.photos {
 article.photoContainer {
   width: 330px;
   float: left;
-  height: 225px;
+  height: 220px;
   margin: 25px 25px 0 0;
+}
+
+article.photoContainer:hover * {
+  display: none;
 }
 
 article.photo1 {
   background-image: url('../images/box1_img.jpg');
 }
+
+div.whiteBanner {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 20px;
+  margin-top: 150px;
+
+}
+
+
+p.whiteBanner {
+  margin: 0 0 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div.whiteBanner div.greenUnderscore {
+  margin-left: 15px;
+}
+
 article.photo2 {
   background-image: url('../images/box2_img.jpg');
 }
@@ -166,11 +191,14 @@ article.description1 {
 
 h2.description1 {
   font-size: 16px;
+  font-weight: 600;
 }
 
 p.description1 {
   font-size: 14px;
   margin-bottom: 30px;
+  line-height: 20px;
+  color: #8a8a8a;
 }
 
 div.greenUnderscore {
@@ -268,7 +296,7 @@ h3.planName {
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 30px;
 }
 
@@ -328,22 +356,9 @@ div.activeCircle {
   border-color: white;
 }
 
-p.activeDigits {
-  color:#38b6a0;
-}
 
 .activePlan .planName {
   color: white;
-}
-
-.activePlan ul.optionList li:nth-child(odd) {
-  background-color: #f1f1f1;
-  color: #b7b7b7;
-}
-
-.activePlan ul.optionList li:nth-child(even) {
-  background-color: #ffffff;
-  color: #a6a6a6;
 }
 
 div.joinButton {
@@ -376,9 +391,6 @@ div.buttonCenter {
 div.buttonRight {
   margin-top: 19px;
 }
-
-
-/*contact section*/
 
 section.contact {
   width: 100%;
@@ -446,11 +458,8 @@ label[for="agree"] {
   margin-bottom: 45px;
 
 }
-/*label[for="agree"]:after {
-  display: block;
-  clear: both;
-  content: '';
-}*/
+
+
 
 input.sendButton {
   width: 350px;
