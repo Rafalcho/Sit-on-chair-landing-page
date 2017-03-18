@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body class="preload">
     <header>
       <div class="container">
         <a href="#"><p class="logo upperWhite">
@@ -34,7 +35,7 @@
         <article class="headArticle">
           <h1 class="headArticle">sit <span class="headArticle">on</span> our <span class="headArticle"> chair</span></h1>
           <p class="headArticle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nesciunt suscipit corrupti nulla voluptate illo delectus sequi, dolor laboriosam. Beatae accusantium veniam numquam, veritatis quasi eos ex. Est, incidunt, eum!</p>
-          <a href="#" class="button"><div class="button">zobacz więcej</div></a>
+          <div class="button">zobacz więcej</div>
         </article>
         <div class="rightArrow arrow">
           &gt;
@@ -127,17 +128,17 @@
         <h2 class="contact">kontakt</h2>
         <div class="greenUnderscore long"></div>
         <div class="contactFormLeft">
-          <form class="contact">
+          <form class="contact" id="contactForm">
             <input type="text" placeholder="Imię">
-            <input type="text" placeholder="email">
-            <textarea placeholder="Wiadomość" rows="5"></textarea>
+            <input type="email" placeholder="email">
+            <textarea placeholder="Wiadomość"></textarea>
           </form>
         </div>
         <div class="contactFormRight">
           <img src="images/red_chair.png" alt="red chair" class="redChair">
           <input type="checkbox" id="agree">
           <label for="agree">Zgadzam się na przetwarzanie <br>danych osobowych</label>
-          <input type="submit" class="sendButton" value="Wyślij">
+          <input type="submit" form="contactForm" class="sendButton" value="Wyślij">
         </div>
       </div>
     </section>
@@ -149,10 +150,10 @@
         </div>
         <div class="rightFooter">
           <ul class="social">
-            <li><a href="#"><img src="images/flickr.png" alt="flickr"></a></li>
-            <li><a href="#"><img src="images/vimeo.png" alt="vimeo"></a></li>
-            <li><a href="#"><img src="images/pinterest.png" alt="pinterest"></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+            <li><img src="images/flickr.png" alt="flickr"></li>
+            <li><img src="images/vimeo.png" alt="vimeo"></li>
+            <li><img src="images/pinterest.png" alt="pinterest"></li>
+            <li><img src="images/twitter.png" alt="twitter"></li>
           </ul>
           <p class="logo footerLogo">
             sit <span class="logo footerLogo">on</span> chair
