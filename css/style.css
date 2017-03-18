@@ -14,6 +14,11 @@ body, input, textarea {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 
 /*header*/
 
@@ -43,7 +48,7 @@ ul.menu {
   list-style: none;
 }
 
-ul.menu li {
+ ul.menu li {
   float: left;
   color: white;
   margin-left: 40px;
@@ -54,13 +59,10 @@ ul.menu li {
   font-weight: 600;
 }
 
-nav.menu a {
-  text-decoration: none;
-  color: white;
-}
 
 nav.menu a:hover {
   color: #38b6a0;
+
 }
 
 nav.menu a:active {
@@ -148,6 +150,7 @@ letter-spacing: 1px;
 margin: 0 auto;
 }
 
+
 a.button {
   text-decoration: none;
 }
@@ -180,6 +183,7 @@ article.photoContainer {
 
 article.photoContainer:hover * {
   display: none;
+
 }
 
 article.photo1 {
@@ -529,8 +533,9 @@ input.sendButton {
 input.sendButton:hover {
   color: #38b6a0;
   background-color: #ffffff;
-}
 
+
+}
 input.sendButton:active {
   position: relative;
   top: -1px;
