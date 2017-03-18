@@ -50,8 +50,23 @@ ul.menu li {
   text-transform: uppercase;
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+nav.menu a:hover {
+  color: #38b6a0;
+}
+
+nav.menu a:active {
+  position: relative;
+  top: -1px;
+  left: 1px;
 }
 
 /*chair section*/
@@ -75,6 +90,7 @@ div.arrow {
   margin-top: 190px;
   width: 10%
 }
+
 
 div.rightArrow {
   float: right;
@@ -132,6 +148,20 @@ letter-spacing: 1px;
 margin: 0 auto;
 }
 
+a.button {
+  text-decoration: none;
+}
+
+div.button:hover {
+  color: #38b6a0;
+  background-color: #ffffff;
+}
+
+div.button:active {
+  position: relative;
+  top: -1px;
+  left: 1px;
+}
 
 /*photos section*/
 
@@ -440,26 +470,49 @@ img.redChair {
 }
 
 
-input[type="checkbox"] {
+#agree {
   float: left;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
   border: 1px solid #38b6a0;
-  background-color: #ffffff;
   margin: 30px 10px 0 0;
-}
-
-label[for="agree"] {
-  float: left;
-  display: block;
-  margin-top: 35px;
-  font-size: 18px;
-  color: #aaaaaa;
-  margin-bottom: 45px;
-
+  cursor: pointer;
 }
 
 
+
+#agree::before, #agree::after {
+      border: 1px solid #38b6a0;
+      content: "";
+      display: block;
+      height: 46px;
+      position: absolute;
+      width: 46px;
+
+}
+#agree::before {
+      background-color: #ffffff;
+}
+#agree::after {
+      background: url('../images/form_ok.jpg') no-repeat center;
+      background-size: 99%;
+      border: 0;
+      display: none;
+}
+#agree:checked::after {
+    display: block;
+  }
+
+  label[for="agree"] {
+    float: left;
+    display: block;
+    margin-top: 35px;
+    font-size: 18px;
+    color: #aaaaaa;
+    margin-bottom: 45px;
+    cursor: pointer;
+
+  }
 
 input.sendButton {
   width: 350px;
@@ -469,7 +522,19 @@ input.sendButton {
   border-radius: 8px;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
 
+}
+
+input.sendButton:hover {
+  color: #38b6a0;
+  background-color: #ffffff;
+}
+
+input.sendButton:active {
+  position: relative;
+  top: -1px;
+  left: 1px;
 }
 
 /*footer */
