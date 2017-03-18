@@ -1,31 +1,4 @@
 
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('../fonts/raleway-bold-webfont.eot');
-    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff'),
-         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('../fonts/raleway-regular-webfont.eot');
-    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-regular-webfont.woff') format('woff'),
-         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .container {
   width: 1054px;
   margin: 0 auto;
@@ -37,8 +10,8 @@
   color: white;
 }
 
-h1, h2, h3, p, article, div, span, li {
-  font-family: ralewayregular, sans-serif;
+h1, h2, h3, p, article, div, span, li, input, textarea {
+  font-family: 'Raleway', sans-serif;
 }
 
 /*header*/
@@ -55,16 +28,16 @@ p.logo {
   float: left;
   line-height: 40px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   vertical-align: middle;
   letter-spacing: 1px;
 }
 
 span.logo {
   color: #38b6a0;
-  font-family: ralewaybold;
-    font-weight: 700;
+  font-weight: 900;
 }
+
 ul.menu {
   float: right;
   list-style: none;
@@ -77,7 +50,7 @@ ul.menu li {
   text-transform: uppercase;
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px
 }
 
@@ -202,8 +175,23 @@ section.prices {
   width: 100%;
   height: 720px;
   background-color: #f1f1f1;
-  padding-top: 50px;
   box-sizing: border-box;
+  padding-top: 40px;
+}
+
+h2.prices, h2.contact {
+  text-transform: uppercase;
+  color: #575757;
+  font-size: 18px;
+  margin: 45px 0 10px 0;
+  font-weight: 500;
+}
+
+h2.prices {
+  margin-top: 0;
+}
+div.long {
+  width: 320px;
 }
 
 div.plansContainer {
@@ -233,7 +221,7 @@ div.outerCircle {
   border-radius: 50%;
   border: 2px solid #c6c6c6;
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
   left: 130px;
   top: -42px;
 }
@@ -269,6 +257,7 @@ h3.planName {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
+  margin-top: 30px;
 }
 
 div.priceCircle {
@@ -312,13 +301,13 @@ ul.optionList {
 
 ul.optionList li:nth-child(odd) {
   background-color: #e4e4e4;
-  line-height: 40px;
+  line-height: 45px;
   color: #9a9a9a;
 }
 
 ul.optionList li:nth-child(even) {
   background-color: #f1f1f1;
-  line-height: 40px;
+  line-height: 45px;
   color: #757575;
 }
 
@@ -329,4 +318,82 @@ div.activeCircle {
 
 p.activeDigits {
   color:#38b6a0;
+}
+
+.activePlan .planName {
+  color: white;
+}
+
+.activePlan ul.optionList li:nth-child(odd) {
+  background-color: #f1f1f1;
+  color: #b7b7b7;
+}
+
+.activePlan ul.optionList li:nth-child(even) {
+  background-color: #ffffff;
+  color: #a6a6a6;
+}
+
+div.joinButton {
+width: 120px;
+height: 35px;
+background-color: #38b6a0;
+color: #ffffff;
+border-radius: 8px;
+text-align: center;
+line-height: 35px;
+text-transform: uppercase;
+font-weight: 400;
+margin: 0 auto;
+cursor: pointer;
+}
+
+div.activeButton {
+  color: #38b6a0;
+  background-color: white;
+}
+
+div.buttonLeft {
+  margin-top: 109px;
+}
+
+div.buttonCenter {
+  margin-top: 66px;
+}
+
+div.buttonRight {
+  margin-top: 19px;
+}
+
+
+/*contact section*/
+
+section.contact {
+  width: 100%;
+  background-color: #ffffff;
+  height: 560px;
+}
+
+input, textarea {
+  display: block;
+  width: 630px;
+  height: 60px;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #38b6a0;
+  font-size: 26px;
+}
+
+input:first-child {
+  margin-top: 40px;
+}
+
+textarea {
+  height: 180px;
+}
+
+
+::-moz-placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder, :-moz-placeholder {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
 }
