@@ -10,9 +10,10 @@
   color: white;
 }
 
-h1, h2, h3, p, article, div, span, li, input, textarea {
+body, input, textarea {
   font-family: 'Raleway', sans-serif;
 }
+
 
 /*header*/
 
@@ -26,7 +27,6 @@ header {
 p.logo {
   color: white;
   float: left;
-  line-height: 40px;
   font-size: 13px;
   font-weight: 600;
   vertical-align: middle;
@@ -386,6 +386,11 @@ section.contact {
   height: 560px;
 }
 
+div.contactFormLeft {
+  width: 70%;
+  float: left;
+}
+
 input, textarea {
   display: block;
   width: 630px;
@@ -408,4 +413,101 @@ textarea {
 ::-moz-placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder, :-moz-placeholder {
   font-size: 26px;
   font-family: 'Raleway', sans-serif;
+}
+
+div.contactFormRight {
+  width: 30%;
+  float: right;
+}
+
+img.redChair {
+  margin-top: 10px;
+  display: block;
+  width: 350px;
+  height: 280px;
+}
+
+
+input[type="checkbox"] {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #38b6a0;
+  background-color: #ffffff;
+  margin: 30px 10px 0 0;
+}
+
+label[for="agree"] {
+  float: left;
+  display: block;
+  margin-top: 35px;
+  font-size: 18px;
+  color: #aaaaaa;
+  margin-bottom: 45px;
+
+}
+/*label[for="agree"]:after {
+  display: block;
+  clear: both;
+  content: '';
+}*/
+
+input.sendButton {
+  width: 350px;
+  height: 70px;
+  background-color: #38b6a0;
+  color: #ffffff;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+/*footer */
+
+footer {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+div.leftFooter {
+  width: 70%;
+  float: left;
+}
+
+p.footer {
+  color: #9d9d9d;
+  font-size: 20px;
+  margin-top: 65px;
+}
+
+
+div.rightFooter {
+  width: 30%;
+  float: left;
+}
+
+ul.social {
+  float: left;
+  list-style: none;
+  margin: 50px 0 45px 0;
+}
+ul.social li {
+  float: left;
+  margin-right: 5px;
+}
+
+p.footerLogo {
+  display: block;
+  float: right;
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 65px;
+
+}
+
+span.footerLogo {
+  color: #9b9b9b;
 }
