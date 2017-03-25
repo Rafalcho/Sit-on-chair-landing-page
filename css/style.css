@@ -48,12 +48,12 @@ span.logo {
   font-weight: 900;
 }
 
-ul.menu {
+.menu {
   float: right;
   list-style: none;
 }
 
- ul.menu li {
+.menu li {
   float: left;
   margin-left: 40px;
   text-transform: uppercase;
@@ -64,20 +64,16 @@ ul.menu {
 
 }
 
-ul.menu a {
-  -webkit-transition: color 0.3s linear;
-  -moz-transition: color 0.3s linear;
-  -ms-transition: color 0.3s linear;
-  -o-transition: color 0.3s linear;
+.menu a {
   transition: color 0.3s linear;
 }
 
-nav.menu a:hover {
+.menu a:hover {
   color: #38b6a0;
 
 }
 
-nav.menu a:active {
+.menu a:active {
   position: relative;
   top: -1px;
   left: 1px;
@@ -85,7 +81,7 @@ nav.menu a:active {
 
 /*chair section*/
 
-section.chairSection {
+.chairSection {
   width: 100%;
   height: 500px;
   box-sizing: border-box;
@@ -96,35 +92,32 @@ section.chairSection {
   background: linear-gradient(bottom, lightgrey, white);
 }
 
-div.arrow {
+.arrow {
   color: #38b6a0;
   font-size: 100px;
   cursor: pointer;
   float: left;
   margin-top: 190px;
   width: 10%;
-  -webkit-transition: transform 0.3s linear;
-  -moz-transition: transform 0.3s linear;
-  -ms-transition: transform 0.3s linear;
-  -o-transition: ctransform 0.3s linear;
-  transition: transform 0.5s linear;
+  transition: transform 0.2s linear;
 
 }
 
-div.arrow:hover {
-  transform: scale(1.3, 1.3);
+.arrow:hover {
+  transform: scale(1.4);
 }
 
-div.rightArrow {
+.rightArrow {
   float: right;
   text-align: right;
 }
-div.arrow:active {
+
+.arrow:active {
   position: relative;
   left: -1px;
 }
 
-div.rightArrow:active {
+.rightArrow:active {
   position: relative;
   left: 1px;
 }
@@ -201,18 +194,14 @@ font-weight: 700;
 letter-spacing: 1px;
 margin: 0 auto;
 cursor: pointer;
--webkit-transition: transform 0.5s linear;
--moz-transition: transform 0.5s linear;
--ms-transition: transform 0.5s linear;
--o-transition: transform 0.5s linear;
-transition: transform 0.5s linear, color 0.5s linear, background-color 0.5s linear;
+transition: all 0.3s linear;
 }
 
 
 div.button:hover {
   color: #38b6a0;
   background-color: #ffffff;
-  transform: scale(1.15, 1.15);
+  transform: scale(1.15);
 }
 
 div.button:active {
@@ -263,13 +252,14 @@ p.whiteBanner {
   font-weight: 500;
 }
 
-div.whiteBanner div.greenUnderscore {
+.whiteBanner .greenUnderscore {
   margin-left: 15px;
 }
 
 article.photo2 {
   background-image: url('../images/box2_img.jpg');
 }
+
 article.description1 {
   width: 340px;
   float: left;
@@ -292,7 +282,7 @@ p.description1 {
   color: #8a8a8a;
 }
 
-div.greenUnderscore {
+.greenUnderscore {
   width: 140px;
   height: 8px;
   background-color: #38b6a0;
@@ -321,17 +311,18 @@ h2.prices, h2.contact {
 h2.prices {
   margin-top: 0;
 }
+
 div.long {
   width: 320px;
 }
 
-div.plansContainer {
+.plansContainer {
  width: 100%;
  height: 500px;
 
 }
 
-div.plan {
+.plan {
   width: 330px;
   height: 500px;
   background-color: #f9f9f9;
@@ -340,13 +331,14 @@ div.plan {
   border: 2px solid #d6d6d6;
   box-sizing: border-box;
   position: relative;
+  transition: transform 0.4s linear;
 }
 
-div.plan:last-child {
+.plan:last-child {
   margin-right: 0;
 }
 
-div.outerCircle {
+.outerCircle {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -357,7 +349,7 @@ div.outerCircle {
   top: -42px;
 }
 
-div.innerCircle {
+.innerCircle {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -368,21 +360,7 @@ div.innerCircle {
 
 }
 
-div.innerCircle.activeCircle {
-  background-color: white;
-}
-
-div.outerCircle.activeCircle {
-  background-color: #38b6a0;
-  border: 2px solid #38b6a0;
-}
-
-div.activePlan {
-  background-color: #38b6a0;
-  border: 2px solid #38b6a0;
-}
-
-h3.planName {
+.planName {
   color: #38b6a0;
   text-transform: uppercase;
   text-align: center;
@@ -391,7 +369,8 @@ h3.planName {
   margin-top: 30px;
 }
 
-div.priceCircle {
+
+.priceCircle {
   width: 130px;
   height: 130px;
   border: 2px solid #c6c6c6;
@@ -423,36 +402,26 @@ p.priceLetters {
 
 }
 
-ul.optionList {
+.optionList {
   list-style: none;
   width: 100%;
   text-align: center;
   font-size: 20px;
 }
 
-ul.optionList li:nth-child(odd) {
+.optionList li:nth-child(odd) {
   background-color: #e4e4e4;
   line-height: 45px;
   color: #9a9a9a;
 }
 
-ul.optionList li:nth-child(even) {
+.optionList li:nth-child(even) {
   background-color: #f1f1f1;
   line-height: 45px;
   color: #757575;
 }
 
-div.activeCircle {
-  background-color: white;
-  border-color: white;
-}
-
-
-.activePlan .planName {
-  color: white;
-}
-
-div.joinButton {
+.joinButton {
 width: 120px;
 height: 35px;
 background-color: #38b6a0;
@@ -464,40 +433,83 @@ text-transform: uppercase;
 font-weight: 400;
 margin: 0 auto;
 cursor: pointer;
--webkit-transition: transform 0.5s linear;
--moz-transition: transform 0.5s linear;
--ms-transition: transform 0.5s linear;
--o-transition: transform 0.5s linear;
-transition: transform 0.5s linear;
+position: relative;
 }
 
-div.joinButton:hover {
-  transform: scale(1.1, 1.1);
-
+.joinButton:hover {
+top: 2px;
 }
 
-div.joinButton:active {
-  position: relative;
+.joinButton:active {
   top: -1px;
   left: 1px;
 }
 
-div.activeButton {
+
+.buttonLeft {
+  margin-top: 109px;
+}
+
+.buttonCenter {
+  margin-top: 66px;
+}
+
+.buttonRight {
+  margin-top: 19px;
+}
+
+/*hover on plan*/
+
+.plan:hover .innerCircle {
+  background-color: white;
+}
+
+
+.plan:hover {
+  background-color: #38b6a0;
+  border: 2px solid #38b6a0;
+  transform: scale(1.1);
+}
+
+.plan:hover .outerCircle {
+  background-color: #38b6a0;
+  border: 2px solid #38b6a0;
+}
+
+.plan:hover .priceCircle {
+  background-color: white;
+  border-color: white;
+}
+
+.plan:hover .planName {
+  color: white;
+}
+
+.plan:hover .joinButton {
   color: #38b6a0;
   background-color: white;
 }
 
-div.buttonLeft {
-  margin-top: 109px;
+.plan:hover .priceDigits {
+  color: #38b6a0;
 }
 
-div.buttonCenter {
-  margin-top: 66px;
+.plan:hover .priceLetters {
+  color: #38b6a0;
 }
 
-div.buttonRight {
-  margin-top: 19px;
+.plan:hover .optionList li:nth-child(odd) {
+  background-color: #ffffff;
+  line-height: 45px;
+  color: #9c9c9c;
 }
+
+.plan:hover .optionList li:nth-child(even) {
+  background-color: #f1f1f1;
+  color: #969696;
+}
+
+/*contact section */
 
 section.contact {
   width: 100%;
@@ -505,7 +517,7 @@ section.contact {
   height: 560px;
 }
 
-div.contactFormLeft {
+.contactFormLeft {
   width: 70%;
   float: left;
 }
@@ -518,6 +530,7 @@ input, textarea {
   margin: 20px 0;
   border: 1px solid #38b6a0;
   font-size: 26px;
+  color: #9b9b9b;
 }
 
 input:first-child {
@@ -534,7 +547,7 @@ textarea {
   font-family: 'Raleway', sans-serif;
 }
 
-div.contactFormRight {
+.contactFormRight {
   width: 30%;
   float: right;
 }
@@ -556,8 +569,6 @@ img.redChair {
   cursor: pointer;
 }
 
-
-
 #agree::before, #agree::after {
       border: 1px solid #38b6a0;
       content: "";
@@ -567,15 +578,18 @@ img.redChair {
       width: 46px;
 
 }
+
 #agree::before {
       background-color: #ffffff;
 }
+
 #agree::after {
       background: url('../images/form_ok.jpg') no-repeat center;
       background-size: 99%;
       border: 0;
       display: none;
 }
+
 #agree:checked::after {
     display: block;
   }
@@ -591,7 +605,7 @@ img.redChair {
 
   }
 
-input.sendButton {
+.sendButton {
   width: 350px;
   height: 70px;
   background-color: #38b6a0;
@@ -600,21 +614,17 @@ input.sendButton {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -ms-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 
 }
 
-input.sendButton:hover {
+.sendButton:hover {
   color: #38b6a0;
   background-color: #ffffff;
 
-
 }
-input.sendButton:active {
+
+.sendButton:active {
   position: relative;
   top: -1px;
   left: 1px;
@@ -628,7 +638,7 @@ footer {
   box-sizing: border-box;
 }
 
-div.leftFooter {
+.leftFooter {
   width: 70%;
   float: left;
 }
@@ -640,32 +650,29 @@ p.footer {
 }
 
 
-div.rightFooter {
+.rightFooter {
   width: 30%;
   float: left;
 }
 
-ul.social {
+.social {
   float: left;
   list-style: none;
   margin: 50px 0 45px 0;
 }
-ul.social li {
+
+.social li {
   float: left;
   margin-right: 5px;
   cursor: pointer;
-  -webkit-transition: transform 0.5s linear;
-  -moz-transition: transform 0.5s linear;
-  -ms-transition: transform 0.5s linear;
-  -o-transition: transform 0.5s linear;
   transition: transform 0.5s linear;;
 }
 
-ul.social li:hover {
-  transform: scale(1.2, 1.2);
+.social li:hover {
+  transform: scale(1.2);
 }
 
-ul.social li:active {
+.social li:active {
   position: relative;
   top: -1px;
 }
