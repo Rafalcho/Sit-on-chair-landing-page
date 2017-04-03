@@ -1,8 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  setTimeout(function() {
-    document.body.classList.remove('preload');
-  }, 500);
+  // setTimeout(function() {
+  //   document.body.classList.remove('preload');
+  // }, 500);
+
+  // hover menu
+
+  var about = document.querySelector('.menu li:first-child');
+  var hiddenMenu = about.querySelector('.hidden-menu');
+
+  about.addEventListener('mouseover', function() {
+    hiddenMenu.classList.remove('hide');
+  });
+
+  about.addEventListener('mouseout', function() {
+    hiddenMenu.classList.add('hide');
+  });
 
   // slider
 
