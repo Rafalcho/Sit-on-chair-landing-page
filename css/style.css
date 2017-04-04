@@ -1,8 +1,3 @@
-/*body.preload * {
-animation-duration: 0s !important;
--webkit-animation-duration: 0s !important;
-transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s !important;}*/
-
 
 .container {
   width: 1054px;
@@ -16,7 +11,7 @@ transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s !impor
 }
 
 body, input, textarea {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 a {
@@ -61,6 +56,7 @@ span.logo {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 600;
+  position: relative;
 
 }
 
@@ -85,7 +81,6 @@ span.logo {
   background-color: #000000;
   padding: 0 20px 0 10px;
   position: absolute;
-  right: 320px;
   top: 50px;
 
 }
@@ -106,7 +101,7 @@ span.logo {
   height: 0;
   position: absolute;
   top: -16px;
-  left: 40px;
+  left: 20px;
   border-top: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #000000;
@@ -138,12 +133,13 @@ span.logo {
   float: left;
   margin-top: 190px;
   width: 10%;
-  transition: transform 0.2s linear;
+  transition: transform 0.1s linear;
 
 }
 
 .arrow:hover {
   transform: scale(1.4);
+  color: black;
 }
 
 .rightArrow {
@@ -241,12 +237,18 @@ div.button:hover {
   color: #38b6a0;
   background-color: #ffffff;
   transform: scale(1.15);
+  -webkit-box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
 }
 
 div.button:active {
   position: relative;
-  top: -1px;
+  top: 1px;
   left: 1px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 /*photos section*/
@@ -263,8 +265,16 @@ article.photoContainer {
   height: 220px;
   margin: 25px 25px 0 0;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 
+article.photoContainer:hover {
+  -webkit-box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.75);
+  transform: translate(-1px, -1px);
+
+}
 
 article.photoContainer:hover * {
   display: none;
@@ -339,7 +349,7 @@ section.prices {
   padding-top: 40px;
 }
 
-h2.prices, h2.contact {
+h2.prices, h2.contact, .application.h2 {
   text-transform: uppercase;
   color: #575757;
   font-size: 18px;
@@ -473,15 +483,23 @@ font-weight: 400;
 margin: 0 auto;
 cursor: pointer;
 position: relative;
+transition: all 0.2s linear;
 }
 
 .joinButton:hover {
-top: 2px;
+top: -2px;
+left: -1px;
+-webkit-box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
 }
 
 .joinButton:active {
   top: -1px;
   left: 1px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 
@@ -508,11 +526,17 @@ top: 2px;
   background-color: #38b6a0;
   border: 2px solid #38b6a0;
   transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
+  -moz-box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
+  box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
 }
 
 .plan:hover .outerCircle {
   background-color: #38b6a0;
   border: 2px solid #38b6a0;
+  -webkit-box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
+  -moz-box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
+  box-shadow: 0px 0px 16px -1px rgba(56,182,160,1);
 }
 
 .plan:hover .priceCircle {
@@ -555,12 +579,9 @@ top: 2px;
   background-color: #f9f9f9;
   padding:30px 0;
 }
-.application h3 {
-  color: #575757;
-  font-size: 18px;
-}
 
-.application header.align_right{
+
+.application header.alignRight{
   text-align: right;
 }
 
@@ -569,7 +590,7 @@ top: 2px;
   margin-top: 10px;
 }
 
-.align_right .greenUnderscore {
+.alignRight .greenUnderscore {
   float: right;
 }
 
@@ -583,7 +604,7 @@ top: 2px;
 .form {
   margin-top:50px;
 }
-.drop_down_list {
+.dropDownList {
   border:1px solid #8de0d2;
   width: 280px;
   height: 50px;
@@ -594,9 +615,9 @@ top: 2px;
   box-sizing: border-box;
 }
 
-.list_label {
+.listLabel {
   font-size: 24px;
-  color: #e2e2e2;
+  color: #9d9d9d;
 }
 
 
@@ -618,7 +639,7 @@ top: 2px;
   padding-left: 65px;
   position: relative;
   font-size: 28px;
-  color: #cecece;
+  color: #9d9d9d;
   line-height: 120%;
   padding-top: 10px;
   cursor: pointer;
@@ -644,12 +665,6 @@ top: 2px;
 .checkbox input:checked + label::after {
   display: block;
 }
-
-
-.active {
-  background: url('../images/form_ok.jpg');
-  width: 48px;
-  height: 40px;
 
 }
 .inline_text {
@@ -677,7 +692,7 @@ top: 2px;
 .blackChair {
   background-image: url('../images/black_chair.png');
 }
-.summary_panel {
+.summaryPanel {
   background-color: white;
   width: 320px;
   height:195px;
@@ -687,7 +702,7 @@ top: 2px;
 
 }
 
-.application .green_button {
+.application .greenButton {
   text-align:center;
   width: 200px;
   padding: 12px 25px;
@@ -698,7 +713,7 @@ top: 2px;
   margin-left: 29px;
 }
 
-.panel_left {
+.panelLeft {
   display: inline-block;
   width: 185px;
   vertical-align: top;
@@ -707,7 +722,7 @@ top: 2px;
   height: 135px;
 }
 
-.panel_right {
+.panelRight {
   float: right;
   width: 100px;
   border-left:1px solid #e7e7e7;
@@ -718,27 +733,27 @@ top: 2px;
   height: 135px;
 }
 
-.panel_left h4 , .panel_right h4{
+.panelLeft h4 , .panelRight h4{
   color: #38b6a0;
   font-size: 23px;
   margin-right: 30px;
 }
 
-.panel_left span{
+.panelLeft span{
   margin-top:10px;
   font-size: 22px;
   color: #5b5a5a;
   display: block;
 }
 
-.panel_right span {
+.panelRight span {
   display: block;
   font-size: 22px;
   color: #38b6a0;
   margin-top:10px;
   margin-right: 30px;
 }
-.sum_label{
+.sumLabel{
   display: inline-block;
   width: 185px;
   margin-top: 10px;
@@ -757,7 +772,7 @@ top: 2px;
 
 }
 
-.list_arrow {
+.listArrow {
   width: 0;
   height: 0;
   border-left: 15px solid transparent;
@@ -770,7 +785,7 @@ top: 2px;
   cursor: pointer;
 }
 
-.list_panel {
+.listPanel {
   background-color: white;
   border: 1px solid #ccc;
   width: 279px;
@@ -783,15 +798,16 @@ top: 2px;
   position: absolute;
   top: 54px;
   box-sizing: border-box;
-  /*display:none;*/
+
 }
-.list_panel li {
+
+.listPanel li {
   margin-top:10px;
   cursor: pointer;
   color: #585858;
 }
 
-.list_panel li:hover {
+.listPanel li:hover {
   color: #38b6a0;
 
 }
@@ -824,6 +840,7 @@ input, textarea {
   border: 1px solid #38b6a0;
   font-size: 26px;
   color: #9b9b9b;
+
 }
 
 input:first-child {
@@ -898,19 +915,20 @@ img.redChair {
 
   }
 
-.sendButton, .green_button {
+.sendButton, .greenButton {
   width: 350px;
   background-color: #38b6a0;
   color: #ffffff;
   border-radius: 8px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s linear;
+  letter-spacing: 1px;
 
 }
 
-.sendButton:hover, .green_button:hover {
+.sendButton:hover, .greenButton:hover {
   color: #38b6a0;
   background-color: #ffffff;
 

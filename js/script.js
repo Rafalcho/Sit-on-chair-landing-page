@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  // setTimeout(function() {
-  //   document.body.classList.remove('preload');
-  // }, 500);
-
   // disabling links default action
 
   var allLinks = Array.from(document.querySelectorAll('a'));
@@ -63,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // calculator
 
-  var listPanels = Array.from(document.querySelectorAll('.list_panel'));
-  var chooseArrows = Array.from(document.querySelectorAll('.list_arrow'));
-  var colorListItems = Array.from(document.querySelector('.color_list').children);
-  var typeListItems = Array.from(document.querySelector('.type_list').children);
-  var materialListItems = Array.from(document.querySelector('.material_list').children);
+  var listPanels = Array.from(document.querySelectorAll('.listPanel'));
+  var chooseArrows = Array.from(document.querySelectorAll('.listArrow'));
+  var colorListItems = Array.from(document.querySelector('.colorList').children);
+  var typeListItems = Array.from(document.querySelector('.typeList').children);
+  var materialListItems = Array.from(document.querySelector('.materialList').children);
   var transport = document.querySelector('#transport');
   var sumSpan = document.querySelector('.sum');
   var sumValue = 0;
@@ -96,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element.addEventListener('click', function() {
 
       var typeName = document.querySelector('h4.title');
-      var typeValue = document.querySelector('h4.type_value');
+      var typeValue = document.querySelector('h4.typeValue');
 
       if (!typeValue.textContent) {
 
@@ -128,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     element.addEventListener('click', function() {
       var colorName = document.querySelector('span.color');
-      var colorValue = document.querySelector('span.color_value');
+      var colorValue = document.querySelector('span.colorValue');
 
       if (!colorValue.textContent) {
 
@@ -150,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     element.addEventListener('click', function() {
       var materialName = document.querySelector('span.pattern');
-      var materialValue = document.querySelector('span.pattern_value');
+      var materialValue = document.querySelector('span.patternValue');
 
       if (!materialValue.textContent) {
         sumValue += parseInt(this.dataset.price);
@@ -170,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
   transport.addEventListener('click', function() {
 
       var transportName = document.querySelector('span.transport');
-      var transportValue = document.querySelector('span.transport_value');
+      var transportValue = document.querySelector('span.transportValue');
       if (!transport.checked) {
         transportName.textContent = '';
         transportValue.textContent = '';
